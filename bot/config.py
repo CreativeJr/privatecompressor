@@ -3,22 +3,22 @@ from bot.get_cfg import get_config
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "5202925982:AAGn_FROGTtB9hdsjtzA6IHNC4uDMigHpOw")
     # The Telegram API things
-    APP_ID = int(get_config("APP_ID", 12345))
-    API_HASH = get_config("API_HASH")
+    APP_ID = int(get_config("APP_ID", 4926633))
+    API_HASH = get_config("API_HASH", "be7b1d39ac5116d22701f8b6ac956785")
      # Get these values from my.telegram.org
     # array to store the channel ID who are authorized to use the bot
     AUTH_USERS = set(
         int(x) for x in get_config(
-            "AUTH_USERS",
+            "AUTH_USERS", "1022568191"
             should_prompt=True
         ).split()
     )
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/downloads")
     # Telegram maximum file upload size
-    BOT_USERNAME = get_config("BOT_USERNAME")
+    BOT_USERNAME = get_config("BOT_USERNAME", "@Privatecompressor_bot")
     MAX_FILE_SIZE = 2097152000
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 0
